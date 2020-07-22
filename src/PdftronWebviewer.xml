@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="mendix.pdftronwebviewer.PdftronWebviewer" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Web"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Pdftron Webviewer</name>
+    <description>My widget description</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="fileName" type="attribute" required="true">
+                <caption>File nane</caption>
+                <description>The name of the file. Usually,the Name attribute of the FileDocument.</description>
+                <attributeTypes>
+                    <attributeType name="String"/>
+                </attributeTypes>
+            </property>        
+            <property key="file" type="file" required="true">
+                <caption>File object</caption>
+                <description>The document to render.</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>
